@@ -6,21 +6,15 @@ file (`.c`, `Dockerfile`, `.env`, …); double-click it to edit.
 
 ## Screenshots
 
-**Quick Look preview** (dark and light):
+**Quick Look** – press Space on a file in Finder. The preview is transparent, so it sits on Quick Look's own glass
+window and the Finder window behind it shows through:
 
-<p>
-  <img src="docs/screenshots/preview-dark.png" alt="Quick Look preview, dark" width="49%">
-  <img src="docs/screenshots/preview-light.png" alt="Quick Look preview, light" width="49%">
-</p>
+![Quick Look preview of a Swift file over a Finder window](docs/screenshots/quick-look.png)
 
-**Editor** – find and replace, Go to File, light theme:
+**Editor** – double-click the file (or hit *Open with Squint* in the preview). Native glass window with the Explorer
+sidebar, VS Code-style editing and the status bar:
 
-![Editor with the find and replace widget](docs/screenshots/editor-find.png)
-
-<p>
-  <img src="docs/screenshots/editor-go-to-file.png" alt="Go to File" width="49%">
-  <img src="docs/screenshots/editor-light.png" alt="Editor, light" width="49%">
-</p>
+![Squint editor with the Explorer sidebar, over a Finder window](docs/screenshots/editor.png)
 
 ## Features
 
