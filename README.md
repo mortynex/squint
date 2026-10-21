@@ -4,6 +4,26 @@ A macOS Quick Look extension that previews code with [Shiki](https://shiki.style
 replacing the Syntax Highlight app, plus a lightweight editor for quick code edits. Press Space on any source/config
 file (`.c`, `Dockerfile`, `.env`, …); double-click it to edit.
 
+## Screenshots
+
+**Quick Look preview** (dark and light):
+
+<p>
+  <img src="docs/screenshots/preview-dark.png" alt="Quick Look preview, dark" width="49%">
+  <img src="docs/screenshots/preview-light.png" alt="Quick Look preview, light" width="49%">
+</p>
+
+**Editor** – find and replace, Go to File, light theme:
+
+![Editor with the find and replace widget](docs/screenshots/editor-find.png)
+
+<p>
+  <img src="docs/screenshots/editor-go-to-file.png" alt="Go to File" width="49%">
+  <img src="docs/screenshots/editor-light.png" alt="Editor, light" width="49%">
+</p>
+
+## Features
+
 - **Quick Look preview** – read-only, native text view with line numbers, transparent so it sits on Quick Look's own
   glass window.
 - **Editor** – a small, CotEditor-sized take on VS Code with a native glass window:
