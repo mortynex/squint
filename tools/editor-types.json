@@ -1,0 +1,869 @@
+{
+ "exported": [
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Adobe JSX",
+   "UTTypeIdentifier": "com.adobe.jsx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jsx"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "com.adobe.psjs",
+   "UTTypeIdentifier": "com.adobe.psjs",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "js"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "INI configuration file",
+   "UTTypeIdentifier": "com.barebones.bbedit.ini-configuration",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cfg",
+     "ini"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Dockerfile",
+   "UTTypeIdentifier": "com.docker.dockerfile",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dockerfile"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "JSON",
+   "UTTypeIdentifier": "com.microsoft.code-workspace",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "code-workspace"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "C# Source File",
+   "UTTypeIdentifier": "com.microsoft.csharp-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Visual Studio C# Project",
+   "UTTypeIdentifier": "com.microsoft.csproj",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "csproj"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "F# Source File",
+   "UTTypeIdentifier": "com.microsoft.f-sharp",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "fsx",
+     "fs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "INI",
+   "UTTypeIdentifier": "com.microsoft.ini",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ini"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Typescript Source File",
+   "UTTypeIdentifier": "com.microsoft.typescript",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ts",
+     "tsx",
+     "mts",
+     "cts"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Visual Basic Source File",
+   "UTTypeIdentifier": "com.microsoft.vb-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "vb",
+     "bas",
+     "basic",
+     "vbs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "XAML source files",
+   "UTTypeIdentifier": "com.microsoft.xaml",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xaml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "abc",
+   "UTTypeIdentifier": "com.unknown.abc",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "abc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "adoc",
+   "UTTypeIdentifier": "com.unknown.adoc",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "adoc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "dn",
+   "UTTypeIdentifier": "com.unknown.dn",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dn"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "gabc",
+   "UTTypeIdentifier": "com.unknown.gabc",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gabc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Hiero File",
+   "UTTypeIdentifier": "com.unknown.htx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "htx"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Haskell literate script",
+   "UTTypeIdentifier": "com.unknown.lhs",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lhs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "ly",
+   "UTTypeIdentifier": "com.unknown.ly",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ly"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "md",
+   "UTTypeIdentifier": "com.unknown.md",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "md"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Shell Script",
+   "UTTypeIdentifier": "com.unknown.sh",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sh"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Sketch File",
+   "UTTypeIdentifier": "com.unknown.sk",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sk"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "skt",
+   "UTTypeIdentifier": "com.unknown.skt",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "skt"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "typ",
+   "UTTypeIdentifier": "com.unknown.typ",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "typ"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Shell script",
+   "UTTypeIdentifier": "org.bash.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bashrc",
+     "zshrc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Clojure script",
+   "UTTypeIdentifier": "org.clojure.script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "clj",
+     "cljs",
+     "cljc",
+     "edn"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "CMake document",
+   "UTTypeIdentifier": "org.cmake.cmake",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cmake"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Groovy Source Code",
+   "UTTypeIdentifier": "org.codehaus.groovy-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "groovy"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Coffee source files",
+   "UTTypeIdentifier": "org.coffee.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "coffee"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Go Source File",
+   "UTTypeIdentifier": "org.go.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "go"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Gradle Source File",
+   "UTTypeIdentifier": "org.gradle.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gradle"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Jupyter Notebook",
+   "UTTypeIdentifier": "org.jupyter.ipynb",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ipynb"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Less stylesheet",
+   "UTTypeIdentifier": "org.lesscss.less",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "less"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Comma-Separated Value Document",
+   "UTTypeIdentifier": "org.libreoffice.csv-document",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "csv"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Lua Source File",
+   "UTTypeIdentifier": "org.lua.lua-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lua"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "DOS Batch Source File",
+   "UTTypeIdentifier": "org.n8gray.bat",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bat",
+     "cmd"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Diff File",
+   "UTTypeIdentifier": "org.n8gray.diff-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "diff",
+     "patch"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": ".ini Source File",
+   "UTTypeIdentifier": "org.n8gray.ini-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ini"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "JSP Source File",
+   "UTTypeIdentifier": "org.n8gray.jsp-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jsp"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Makefile Source File",
+   "UTTypeIdentifier": "org.n8gray.makefile",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mk",
+     "mak"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Ruby on Rails File",
+   "UTTypeIdentifier": "org.n8gray.railstemplate",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rhtml",
+     "erb",
+     "rjs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "SQL Source File",
+   "UTTypeIdentifier": "org.n8gray.structured-query-language-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sql"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "XHTML Source File",
+   "UTTypeIdentifier": "org.n8gray.xhtml",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xhtml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "",
+   "UTTypeIdentifier": "org.nodejs.cjs",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cjs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "OCaml Interface File",
+   "UTTypeIdentifier": "org.ocaml.ocaml-interface",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mli"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "OCaml File",
+   "UTTypeIdentifier": "org.ocaml.ocaml-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ml",
+     "mll",
+     "mly"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Perl script",
+   "UTTypeIdentifier": "org.perl.test-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "t"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "reStructuredText document",
+   "UTTypeIdentifier": "org.python.restructuredtext",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rst",
+     "rest"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "RubyGems Gemspec file",
+   "UTTypeIdentifier": "org.rubygems.gemspec",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gemspec"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Rust source",
+   "UTTypeIdentifier": "org.rust-lang.rust",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rs",
+     "rlib"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Rust Source File",
+   "UTTypeIdentifier": "org.rust-lang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Dart Source File",
+   "UTTypeIdentifier": "org.sbarex.dart",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dart"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Microsoft Powershell source file",
+   "UTTypeIdentifier": "org.sbarex.ms-powershell",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ps1"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Microsoft Powershell module file",
+   "UTTypeIdentifier": "org.sbarex.ms-powershell-module",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "psm1"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Microsoft Powershell module manifest",
+   "UTTypeIdentifier": "org.sbarex.ms-powershell-module-manifest",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "psd1"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "log",
+   "UTTypeIdentifier": "org.tug.log",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "log"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Lua script",
+   "UTTypeIdentifier": "org.tug.lua",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lua"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Vue source file",
+   "UTTypeIdentifier": "org.vuejs.vue",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "vue"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Cascading Style Sheet",
+   "UTTypeIdentifier": "org.w3.css",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "css"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Document Type Definition",
+   "UTTypeIdentifier": "org.w3.xml-dtd",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dtd"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Yaml document",
+   "UTTypeIdentifier": "org.yaml.yaml",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "yml",
+     "yaml"
+    ]
+   }
+  }
+ ],
+ "extra": [
+  "com.adobe.jsx",
+  "com.adobe.psjs",
+  "com.barebones.bbedit.ini-configuration",
+  "com.docker.dockerfile",
+  "com.microsoft.code-workspace",
+  "com.microsoft.csharp-source",
+  "com.microsoft.csproj",
+  "com.microsoft.f-sharp",
+  "com.microsoft.ini",
+  "com.microsoft.typescript",
+  "com.microsoft.vb-source",
+  "com.microsoft.xaml",
+  "com.unknown.abc",
+  "com.unknown.adoc",
+  "com.unknown.dn",
+  "com.unknown.gabc",
+  "com.unknown.htx",
+  "com.unknown.lhs",
+  "com.unknown.ly",
+  "com.unknown.md",
+  "com.unknown.sh",
+  "com.unknown.sk",
+  "com.unknown.skt",
+  "com.unknown.typ",
+  "org.bash.source",
+  "org.clojure.script",
+  "org.cmake.cmake",
+  "org.codehaus.groovy-source",
+  "org.coffee.source",
+  "org.go.source",
+  "org.gradle.source",
+  "org.jupyter.ipynb",
+  "org.lesscss.less",
+  "org.libreoffice.csv-document",
+  "org.lua.lua-source",
+  "org.n8gray.bat",
+  "org.n8gray.diff-script",
+  "org.n8gray.ini-source",
+  "org.n8gray.jsp-source",
+  "org.n8gray.makefile",
+  "org.n8gray.railstemplate",
+  "org.n8gray.structured-query-language-source",
+  "org.n8gray.xhtml",
+  "org.nodejs.cjs",
+  "org.ocaml.ocaml-interface",
+  "org.ocaml.ocaml-source",
+  "org.perl.test-script",
+  "org.python.restructuredtext",
+  "org.rubygems.gemspec",
+  "org.rust-lang.rust",
+  "org.rust-lang.source",
+  "org.sbarex.dart",
+  "org.sbarex.ms-powershell",
+  "org.sbarex.ms-powershell-module",
+  "org.sbarex.ms-powershell-module-manifest",
+  "org.tug.log",
+  "org.tug.lua",
+  "org.vuejs.vue",
+  "org.w3.css",
+  "org.w3.xml-dtd",
+  "org.yaml.yaml",
+  "public.css",
+  "public.python-script",
+  "public.swift-source",
+  "public.tsx",
+  "public.utf8-plain-text",
+  "public.xhtml"
+ ],
+ "tex": [
+  "com.unknown.asy",
+  "com.unknown.bbx",
+  "com.unknown.cbx",
+  "com.unknown.clo",
+  "com.unknown.fd",
+  "com.unknown.gaux",
+  "com.unknown.glog",
+  "com.unknown.gtex",
+  "com.unknown.ins",
+  "com.unknown.lbx",
+  "com.unknown.lytex",
+  "com.unknown.rnw",
+  "com.unknown.stex",
+  "edu.uo.texshop.comment",
+  "edu.uo.texshop.ctx",
+  "edu.uo.texshop.engine",
+  "edu.uo.texshop.ltx",
+  "edu.uo.texshop.tex",
+  "edu.uo.texshop.texi",
+  "edu.uo.texshop.texshop",
+  "org.tug.aux",
+  "org.tug.bst",
+  "org.tug.cls",
+  "org.tug.ctx",
+  "org.tug.def",
+  "org.tug.drv",
+  "org.tug.dtx",
+  "org.tug.fdd",
+  "org.tug.ltx",
+  "org.tug.mf",
+  "org.tug.mp",
+  "org.tug.sty",
+  "org.tug.tex",
+  "org.tug.tex.bibtex",
+  "org.tug.tex.context",
+  "org.tug.tex.dvi",
+  "org.tug.tex.latex",
+  "org.tug.tex.texinfo",
+  "org.tug.texi",
+  "public.tex"
+ ]
+}

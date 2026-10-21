@@ -1,0 +1,2772 @@
+{
+ "supported": [
+  "build.astro.files",
+  "com.adobe.acrobat.sequ",
+  "com.adobe.actionscript",
+  "com.adobe.coldfusion",
+  "com.adobe.jsx",
+  "com.adobe.edn",
+  "com.adobe.fea",
+  "com.adobe.mxml",
+  "com.apple.applescript.script",
+  "com.apple.applescript.text",
+  "com.apple.binary-property-list",
+  "com.apple.dt.document.ascii-property-list",
+  "com.apple.dt.document.scheme",
+  "com.apple.dt.interfacebuilder.document.storyboard",
+  "com.apple.interfacebuilder.document.cocoa",
+  "com.apple.mobileconfig",
+  "com.apple.property-list",
+  "com.apple.rez-source",
+  "com.apple.terminal.settings",
+  "com.apple.terminal.shell-script",
+  "com.apple.xcode.entitlements-property-list",
+  "com.apple.xcode.strings-dictionary",
+  "com.apple.xcode.strings-text",
+  "com.apple.xml-property-list",
+  "com.autoit.au3",
+  "com.barebones.bbedit.go-source",
+  "com.barebones.bbedit.ini-configuration",
+  "com.barebones.bbedit.jsp-source",
+  "com.barebones.bbedit.lua-source",
+  "com.barebones.bbedit.r-source",
+  "com.barebones.bbedit.rust-source",
+  "com.barebones.bbedit.scss-source",
+  "com.barebones.bbedit.sql-source",
+  "com.barebones.bbedit.tex-source",
+  "com.barebones.bbedit.typescript-source",
+  "com.barebones.bbedit.vbscript-source",
+  "com.barebones.bbedit.verilog-hdl-source",
+  "com.barebones.bbedit.vhdl-source",
+  "com.bps.elixir-source",
+  "com.coteditor.scheme",
+  "com.dhowett.logos",
+  "com.docker.dockerfile",
+  "com.eiffel.eiffelstudio-project-config",
+  "com.eiffel.source-code",
+  "com.google.earth.kml",
+  "com.google.kml",
+  "com.ibm.rexx",
+  "com.jetbrain.source",
+  "com.macromates.textmate.cgi-script",
+  "com.macromates.textmate.config-file",
+  "com.macromates.textmate.lisp",
+  "com.macromates.textmate.scheme",
+  "com.macromates.textmate.standard-ml",
+  "com.metatrader.mq",
+  "com.microsoft.asp",
+  "com.microsoft.code-workspace",
+  "com.microsoft.csharp-source",
+  "com.microsoft.csproj",
+  "com.microsoft.c-sharp",
+  "com.microsoft.dzi",
+  "com.microsoft.f-sharp",
+  "com.microsoft.ini",
+  "com.microsoft.typescript",
+  "com.microsoft.vb-source",
+  "com.microsoft.visual-basic",
+  "com.microsoft.xaml",
+  "com.netscape.javascript-source",
+  "com.nutstore.down",
+  "com.nvidia.cuda",
+  "com.oracle.sql",
+  "com.sas.source",
+  "com.sass-lang.sass",
+  "com.sequel-ace.sequel-ace.sql",
+  "com.stata.source",
+  "com.stata.stata.do",
+  "com.sun.java-properties",
+  "com.sun.java-source",
+  "com.sun.java-server-pages",
+  "com.sun.java-web-start",
+  "com.sun.javafx",
+  "com.sun.java-class",
+  "com.sun.manifest",
+  "com.unknown.lhs",
+  "com.seriflabs.xmp",
+  "com.symfony.twig",
+  "com.topografix.gpx",
+  "com.unity.document",
+  "dev.nix.source",
+  "dev.svelte.source",
+  "edu.uo.texshop.tex",
+  "info.haml.haml",
+  "io.azkaban.flow",
+  "io.github.jsx",
+  "io.nextflow.source",
+  "io.terraform.tfvars",
+  "io.toml",
+  "is.workflow.my.workflow",
+  "org.applescript.source",
+  "org.arduino.ino-source",
+  "org.arduino.source",
+  "org.asm.source",
+  "org.babashka.source",
+  "org.bash.source",
+  "org.bazel.source",
+  "org.clojure",
+  "org.cmake.cmake",
+  "org.clojure.script",
+  "org.cocoapods.podspec",
+  "org.codehaus.groovy-source",
+  "org.coffee.source",
+  "org.coffeescript.coffeescript",
+  "org.crystal-lang.source",
+  "org.cson.source",
+  "org.dartlang.dart",
+  "org.dlang.d",
+  "org.emcascript.emcascript",
+  "org.erlang.erlang",
+  "org.erlang.erlang-source",
+  "org.elixir-lang.source",
+  "org.fish.source",
+  "org.fonttools.ttx",
+  "org.gcc.files",
+  "org.go.source",
+  "org.golang.golang",
+  "org.gradle.source",
+  "org.haskell.haskell",
+  "org.haskell.haskell-source",
+  "org.haskell.literate-haskell-source",
+  "org.idpf.ncx",
+  "org.idpf.opf",
+  "org.inno.source",
+  "org.iso.sql",
+  "org.julialang.julia",
+  "org.jupyter.ipynb",
+  "org.json.jsonc",
+  "org.json5.json5",
+  "org.jsoncanvas.canvas",
+  "org.jsonlines.jsonl",
+  "org.khronos.gltf",
+  "org.kmt.source",
+  "org.km3",
+  "org.kotlinlang.kotlin-source",
+  "org.kotlinlang.source",
+  "org.latex-project.latex",
+  "org.lesscss.less",
+  "org.letterror.designspace",
+  "org.lilypond.files",
+  "org.lua.lua",
+  "org.lua.lua-source",
+  "org.mamedev.lay",
+  "org.microsoft.inf",
+  "org.miniscript.ms",
+  "org.nfo",
+  "org.n8gray.awk",
+  "org.n8gray.bat",
+  "org.n8gray.diff-script",
+  "org.n8gray.idl",
+  "org.n8gray.ini-source",
+  "org.n8gray.javaInstaller",
+  "org.n8gray.jsp-source",
+  "org.n8gray.lisp",
+  "org.n8gray.makefile",
+  "org.n8gray.railstemplate",
+  "org.n8gray.scheme-source",
+  "org.n8gray.standard-ml-source",
+  "org.n8gray.structured-query-language-source",
+  "org.n8gray.verilog",
+  "org.n8gray.vhdl",
+  "org.n8gray.xhtml",
+  "org.nodejs.cjs",
+  "org.ocaml.ocaml",
+  "org.ocaml.ocaml-interface",
+  "org.ocaml.ocaml-source",
+  "org.omg.ecore",
+  "org.openscad.source",
+  "org.opml.opml",
+  "org.opml.source",
+  "org.perl.test-script",
+  "org.pddl.pddl",
+  "org.python.compiled-script",
+  "org.python.restructuredtext",
+  "org.r-project.r",
+  "org.racket-lang.source",
+  "org.raml.raml",
+  "org.rdf.source",
+  "org.rubygems.gemspec",
+  "org.ruby-lang.erb",
+  "org.ruby-lang.eruby",
+  "org.rubyonrails.erb-sql",
+  "org.robotframework.robot",
+  "org.rust-lang.rust",
+  "org.rust-lang.source",
+  "org.sagemath.source",
+  "org.sbarex.conf",
+  "org.sbarex.dart",
+  "org.sbarex.ms-powershell",
+  "org.sbarex.ms-powershell-module",
+  "org.sbarex.ms-powershell-module-manifest",
+  "org.sbarex.nim",
+  "org.sbarex.qlsyntaxhighlight.dummy",
+  "org.scala.source",
+  "org.smali.source",
+  "org.soliditylang.source",
+  "org.tug.cls",
+  "org.tug.lua",
+  "org.tug.tex",
+  "org.tug.tex.bibtex",
+  "org.tug.sty",
+  "org.unifiedfontobject.fea",
+  "org.vim.as-file",
+  "org.vim.asp-file",
+  "org.vim.aspx-file",
+  "org.vim.cs-file",
+  "org.vim.css-file",
+  "org.vim.dtd-file",
+  "org.vim.dylan-file",
+  "org.vim.fscript-file",
+  "org.vim.hs-file",
+  "org.vim.inc-file",
+  "org.vim.ini-file",
+  "org.vim.jsp-file",
+  "org.vim.lisp-file",
+  "org.vim.pch-file",
+  "org.vim.pch++-file",
+  "org.vim.sql-file",
+  "org.vim.tex-file",
+  "org.vim.toml-file",
+  "org.vim.vb-file",
+  "org.vim.vba-file",
+  "org.vim.vim-script",
+  "org.vim.xsl-file",
+  "org.vim.yaml-file",
+  "org.vuejs.vue",
+  "org.w3.xsl",
+  "org.w3.wsdl",
+  "org.xml-tools.source",
+  "org.xsd.schema",
+  "org.xul.source",
+  "org.yaml.yaml",
+  "org.w3.css",
+  "org.w3.xml-dtd",
+  "public.ada-source",
+  "public.bash-script",
+  "public.csh-script",
+  "public.css",
+  "public.c-header",
+  "public.c-plus-plus-header",
+  "public.c-plus-plus-source",
+  "public.c-sharp-source",
+  "public.c-source",
+  "public.conf",
+  "public.content",
+  "public.data",
+  "public.data.xml.opml",
+  "public.diff",
+  "public.dylan-source",
+  "public.elixir-source",
+  "public.fortran-source",
+  "public.fortran-90-source",
+  "public.fortran-95-source",
+  "public.gd",
+  "public.ini",
+  "public.item",
+  "public.java",
+  "public.json",
+  "public.jsx-source",
+  "public.ksh-script",
+  "public.lua-source",
+  "public.make-source",
+  "public.objective-c-source",
+  "public.objective-c-plus-plus-source",
+  "public.pascal-source",
+  "public.patch-file",
+  "public.perl-script",
+  "public.php-script",
+  "public.plain-text",
+  "public.properties",
+  "public.python-script",
+  "public.ruby-script",
+  "public.rust-source",
+  "public.script",
+  "public.shell-script",
+  "public.source-code",
+  "public.swift-source",
+  "public.tcsh-script",
+  "public.tex",
+  "public.text",
+  "public.toml",
+  "public.tsx",
+  "public.typescript",
+  "public.unix-executable",
+  "public.xml",
+  "public.xml.xsd",
+  "public.xsd",
+  "public.yaml",
+  "public.zsh-script",
+  "run.gleam.source",
+  "tk.tcl.tcl",
+  "tk.tcl.tcl-source",
+  "dyn.ah62d4rv4ge8007a",
+  "dyn.ah62d4rv4ge8007dx",
+  "dyn.ah62d4rv4ge80c75p",
+  "dyn.ah62d4rv4ge80g62",
+  "dyn.ah62d4rv4ge80s52",
+  "dyn.ah62d4rv4ge80s6xbqv0gn",
+  "dyn.ah62d4rv4ge80w5pq",
+  "dyn.ah62d4rv4ge80y652",
+  "dyn.ah62d4rv4ge81g22",
+  "dyn.ah62d4rv4ge81g25brvuu",
+  "dyn.ah62d4rv4ge81g25xsq",
+  "dyn.ah62d4rv4ge80g55sq2",
+  "dyn.ah62d4rv4ge81k3p2",
+  "dyn.ah62d4rv4ge81a8p",
+  "dyn.ah62d4rv4ge81g6pq",
+  "dyn.ah62d4rv4ge81k55rru",
+  "dyn.ah62d46dzqm0gw23stb002svvhz6g45a",
+  "dyn.ah62d4rv4ge8086drru",
+  "dyn.ah62d4rv4ge80g5dn",
+  "dyn.ah62d4rv4ge80g5dnsq",
+  "dyn.ah62d4rv4ge80q5dts6",
+  "dyn.ah62d4rv4ge81a6xtsbw1e7dmqz3u",
+  "dyn.ah62d4rv4ge81g7xfrv4gn",
+  "dyn.ah62d4rv4ge81s3xqr75u",
+  "dyn.ah62d4rv4ge81u2prru",
+  "dyn.ah62d4rv4ge81u5pu",
+  "dyn.ah62d4rv4ge81a3deru",
+  "dyn.ah62d4rv4ge81e3pbqv00n",
+  "dyn.ah62d4rv4ge80c65r",
+  "dyn.ah62d4rv4ge81u65e",
+  "dyn.ah62d4rv4ge81u6pzqz3hw",
+  "dyn.ah62d4rv4ge81u6k",
+  "dyn.ah62d4rv4ge81u7k",
+  "dyn.ah62d4rv4ge80s3a",
+  "dyn.ah62d4rv4ge80g4xx",
+  "dyn.ah62d4rv4ge80g7dx",
+  "dyn.ah62d4rv4ge80k55drrw1e3xmrvwu",
+  "dyn.ah62d4rv4ge80q5xd",
+  "dyn.ah62d4rv4ge81a6xd",
+  "dyn.ah62d4rv4ge81k6xh",
+  "dyn.ah62d4rv4ge81a45x",
+  "dyn.ah62d4rv4ge81a45c",
+  "dyn.ah62d4rv4ge81a25p",
+  "dyn.ah62d4rv4ge81k6dx",
+  "dyn.ah62d4rv4ge81k6dc",
+  "dyn.ah62d4rv4ge81k8pu",
+  "dyn.ah62d4rv4ge81k2pc",
+  "dyn.ah62d4rv4ge80c7xy",
+  "dyn.ah62d4rv4ge80g55s",
+  "dyn.ah62d4rv4ge81g6px",
+  "dyn.ah62d4rv4ge81q72",
+  "dyn.ah62d4rv4ge8047x1",
+  "dyn.ah62d4rv4ge81k6xh",
+  "dyn.ah62d4rv4ge80y65tr3vu",
+  "dyn.ah62d4rv4ge81a7pc",
+  "dyn.ah62d4rv4ge81k",
+  "dyn.ah62d4rv4ge81g2px",
+  "dyn.ah62d4rv4ge80g65ksv002",
+  "dyn.ah62d4rv4ge81s65eru",
+  "dyn.ah62d4rv4ge81k3x0qf3hg",
+  "dyn.ah62d4rv4ge81k3u",
+  "dyn.ah62d4rv4ge81g55q",
+  "dyn.ah62d4rv4ge81g2phqy",
+  "dyn.ah62d4rv4ge80g6u",
+  "dyn.ah62d4rv4ge8063u",
+  "dyn.ah62d4rv4ge80c3dt",
+  "dyn.ah62d4rv4ge80k52",
+  "dyn.ah62d4rv4ge80y65tr30a",
+  "dyn.ah62d4rv4ge80c7mx",
+  "dyn.ah62d4rv4ge80g55eqy01s55wrr31a2pdqy",
+  "dyn.ah62d4rv4ge80e2p4qz0a",
+  "dyn.ah62d4rv4ge81g5pbrvyu",
+  "dyn.ah62d4rv4ge8042ppqzxgw5df",
+  "dyn.ah62d4rv4ge8046de",
+  "dyn.ah62d4rv4ge80y65r",
+  "dyn.ah62d4rv4ge80e8xq",
+  "dyn.ah62d4rv4ge80c25g",
+  "dyn.ah62d4rv4ge80u25q",
+  "dyn.ah62d4rv4ge80c65ysm1u",
+  "dyn.ah62d4rv4ge8028k",
+  "dyn.ah62d4rv4ge8048drru",
+  "dyn.ah62d4rv4ge81k3xxsvu1k3",
+  "dyn.ah62d4rv4ge8064p2",
+  "dyn.ah62d4rv4ge80w5d3",
+  "dyn.ah62d4rv4ge81e2prru",
+  "dyn.ah62d4rv4ge80g7k",
+  "dyn.ah62d4rv4ge80w6d3r3va",
+  "dyn.ah62d4rv4ge81g5dx",
+  "dyn.ah62d4rv4ge81g6dx",
+  "dyn.ah62d4rv4ge81g5de",
+  "dyn.ah62d4rv4ge81g62",
+  "dyn.ah62d4rv4ge81e45y",
+  "dyn.ah62d4rv4ge8022p3",
+  "dyn.ah62d4rv4ge81k7d2",
+  "dyn.ah62d4rv4ge80g65usm10y",
+  "dyn.ah62d4rv4ge81n5xmsv6u",
+  "dyn.ah62d4rv4ge80u3pfta",
+  "dyn.ah62d4rv4ge8087dmr6",
+  "dyn.ah62d4rv4ge80n3dq",
+  "dyn.ah62d4rv4ge80255dsvu0e5df",
+  "dyn.ah62d4rv4ge81a8mx",
+  "dyn.ah62d4rv4ge81a8pm",
+  "dyn.ah62d4rv4ge81k5prru",
+  "dyn.ah62d4rv4ge81y4ph",
+  "dyn.ah62d4rv4ge80622",
+  "dyn.ah62d4rv4ge80k3pxrfx0665uqfv0n",
+  "dyn.ah62d4rv4ge81a55r",
+  "dyn.ah62d4rv4ge80q3pb",
+  "dyn.age80s5dfqf0u",
+  "dyn.ah62d4rv4ge80g2pss3u1g",
+  "dyn.age81a65nsq",
+  "dyn.ah62d4rv4ge81a65nsq",
+  "dyn.ah62d4rv4ge81y55s",
+  "dyn.ah62d4rv4ge81g25q",
+  "dyn.ah62d4rv4ge80462",
+  "dyn.ah62d4rv4ge8046mz",
+  "dyn.ah62d4rv4ge8046my",
+  "dyn.ah62d4rv4ge80y65tr24u",
+  "dyn.ah62d4rv4ge80k8xm",
+  "dyn.ah62d4rv4ge8086dg",
+  "dyn.ah62d4rv4ge806252",
+  "dyn.ah62d4rv4ge81e3p2",
+  "dyn.ah62d4rv4ge81e3p2ta",
+  "dyn.ah62d4rv4ge81e55cr74g8",
+  "dyn.ah62d4rv4ge8044pqru",
+  "dyn.ah62d4rv4ge80e2u",
+  "dyn.ah62d4rv4ge81g25bqu",
+  "dyn.ah62d4rv4ge80n5x0"
+ ],
+ "exported": [
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Adobe Flash ActionScript Source File",
+   "UTTypeIdentifier": "com.adobe.actionscript",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "as"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Coldfusion Source Code",
+   "UTTypeIdentifier": "com.adobe.coldfusion",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cfc",
+     "cfm",
+     "cfml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml",
+    "dyn.ah62d4rv4ge8048drru"
+   ],
+   "UTTypeIdentifier": "com.adobe.mxml",
+   "UTTypeTagSpecification": {
+    "com.apple.ostype": [
+     "mxml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80y652",
+    "public.data"
+   ],
+   "UTTypeDescription": "Adobe JSX",
+   "UTTypeIdentifier": "com.adobe.jsx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jsx"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81a65nsq",
+    "dyn.age81a65nsq",
+    "public.javascript"
+   ],
+   "UTTypeIdentifier": "com.adobe.psjs",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "js"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80c7mx",
+    "public.data"
+   ],
+   "UTTypeIdentifier": "com.autoit.au3",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "a3x",
+     "au3"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.c-plus-plus-source",
+    "public.source-code",
+    "dyn.ah62d4rv4ge80g7k"
+   ],
+   "UTTypeIdentifier": "com.nvidia.cuda",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cu"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Logos Source File",
+   "UTTypeIdentifier": "com.dhowett.logos",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xm"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Dockerfile",
+   "UTTypeIdentifier": "com.docker.dockerfile",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dockerfile"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml"
+   ],
+   "UTTypeDescription": "EiffelStudio project configuration file",
+   "UTTypeIdentifier": "com.eiffel.eiffelstudio-project-config",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ecf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Eiffel source code file",
+   "UTTypeIdentifier": "com.eiffel.source-code",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "e"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge81e3p2ta",
+    "dyn.ah62d4rv4ge81e3p2"
+   ],
+   "UTTypeDescription": "Rexx source file",
+   "UTTypeIdentifier": "com.ibm.rexx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rexx",
+     "rex"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80w5pq",
+    "public.xml"
+   ],
+   "UTTypeDescription": "JetBrain Project File",
+   "UTTypeIdentifier": "com.jetbrain.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "iml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge8046my",
+    "dyn.ah62d4rv4ge8046mz"
+   ],
+   "UTTypeIdentifier": "com.metatrader.mq",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mq4",
+     "mq5"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.json",
+    "dyn.ah62d4rv4ge80g55eqy01s55wrr31a2pdqy"
+   ],
+   "UTTypeIdentifier": "com.microsoft.code-workspace",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "code-workspace"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "C# Source File",
+   "UTTypeIdentifier": "com.microsoft.csharp-source",
+   "UTTypeReferenceURL": "http://www.microsoft.com/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80g65usm10y",
+    "public.xml"
+   ],
+   "UTTypeDescription": "Visual Studio C# Project",
+   "UTTypeIdentifier": "com.microsoft.csproj",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "csproj"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80k8xm",
+    "public.xml"
+   ],
+   "UTTypeIdentifier": "com.microsoft.dzi",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dzi"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "F# Source File",
+   "UTTypeIdentifier": "com.microsoft.f-sharp",
+   "UTTypeReferenceURL": "http://www.microsoft.com/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "fsx",
+     "fs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80g7dx",
+    "com.microsoft.typescript",
+    "public.source-code",
+    "public.text",
+    "public.content"
+   ],
+   "UTTypeDescription": "Typescript Source File",
+   "UTTypeIdentifier": "com.microsoft.typescript",
+   "UTTypeReferenceURL": "http://www.microsoft.com/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ts",
+     "tsx",
+     "mts",
+     "cts"
+    ],
+    "public.mime-type": [
+     "text/plain",
+     "application/x-typescript"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Visual Basic Source File",
+   "UTTypeIdentifier": "com.microsoft.vb-source",
+   "UTTypeReferenceURL": "http://www.microsoft.com/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "vb",
+     "bas",
+     "basic",
+     "vbs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "XAML source files",
+   "UTTypeIdentifier": "com.microsoft.xaml",
+   "UTTypeReferenceURL": "http://www.microsoft.com/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xaml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item"
+   ],
+   "UTTypeDescription": "Oracle PL/SQL",
+   "UTTypeIdentifier": "com.oracle.sql",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "fnc",
+     "prc",
+     "trg",
+     "pks",
+     "pkb",
+     "pck",
+     "tps",
+     "tpb",
+     "typ",
+     "tab",
+     "avt",
+     "con",
+     "sqs",
+     "vw",
+     "mvw",
+     "trg"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "SAS file",
+   "UTTypeIdentifier": "com.sas.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sas"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81u5pu",
+    "public.data"
+   ],
+   "UTTypeDescription": "Adobe Extensible Metadata Platform file (XMP)",
+   "UTTypeIdentifier": "com.seriflabs.xmp",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xmp"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80k52",
+    "dyn.ah62d4rv4ge80c3dt"
+   ],
+   "UTTypeDescription": "Stata source file",
+   "UTTypeIdentifier": "com.stata.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "do",
+     "ado"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80c25g"
+   ],
+   "UTTypeIdentifier": "com.steampowered.appmanifest",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "acf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "JavaFX ML",
+   "UTTypeIdentifier": "com.sun.javafx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "fxml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "com.sun.java-class"
+   ],
+   "UTTypeDescription": "Java Class",
+   "UTTypeIdentifier": "com.sun.java-class",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "class"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "MF files",
+   "UTTypeIdentifier": "com.sun.manifest",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Symfony twig template",
+   "UTTypeIdentifier": "com.symfony.twig",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "twig"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text",
+    "dyn.ah62d4rv4ge81n5xmsv6u"
+   ],
+   "UTTypeDescription": "Unity document",
+   "UTTypeIdentifier": "com.unity.document",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "unity"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80c65ysm1u"
+   ],
+   "UTTypeDescription": "Astro source files",
+   "UTTypeIdentifier": "build.astro.files",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "astro"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.data",
+    "public.item",
+    "dyn.ah62d4rv4ge8064p2"
+   ],
+   "UTTypeDescription": "Nix Expression Language",
+   "UTTypeIdentifier": "dev.nix.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "nix"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge81g7xfrv4gn"
+   ],
+   "UTTypeDescription": "Svelte source file",
+   "UTTypeIdentifier": "dev.svelte.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "svelte"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "Haml document",
+   "UTTypeIdentifier": "info.haml.haml",
+   "UTTypeReferenceURL": "http://haml.info",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "haml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80q5dts6"
+   ],
+   "UTTypeDescription": "Azkaban flow file",
+   "UTTypeIdentifier": "io.azkaban.flow",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "flow"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge8063u",
+    "public.item"
+   ],
+   "UTTypeDescription": "Nextflow files",
+   "UTTypeIdentifier": "io.nextflow.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "nf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81k3x0qf3hg",
+    "dyn.ah62d4rv4ge81k3u",
+    "dyn.ah62d4rv4ge80u25q",
+    "dyn.ah62d4rv4ge81k3xxsvu1k3",
+    "public.item"
+   ],
+   "UTTypeDescription": "Terraform files",
+   "UTTypeIdentifier": "io.terraform.tfvars",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "tfstate",
+     "tf",
+     "tfvars",
+     "hcl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81s3xqr75u"
+   ],
+   "UTTypeDescription": "Property List",
+   "UTTypeIdentifier": "is.workflow.my.workflow",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "wflow"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Markdown document",
+   "UTTypeIdentifier": "net.daringfireball.markdown",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": "md"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "ASCR files",
+   "UTTypeIdentifier": "org.applescript.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ascr"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "INO files",
+   "UTTypeIdentifier": "org.arduino.ino-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ino"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "PDE files",
+   "UTTypeIdentifier": "org.arduino.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "pde",
+     "ino"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge80c65r"
+   ],
+   "UTTypeDescription": "ASM source files",
+   "UTTypeIdentifier": "org.asm.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "s79",
+     "asm"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80e2u",
+    "org.clojure.script",
+    "public.source-code",
+    "public.plain-text",
+    "public.text"
+   ],
+   "UTTypeIdentifier": "org.babashka.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bb"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Shell script",
+   "UTTypeIdentifier": "org.bash.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bashrc",
+     "zshrc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80e2p4qz0a",
+    "dyn.ah62d4rv4ge80e8xq"
+   ],
+   "UTTypeDescription": "Bazel source file",
+   "UTTypeIdentifier": "org.bazel.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bzl",
+     "bazel"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Clojure script",
+   "UTTypeIdentifier": "org.clojure.script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "clj",
+     "cljs",
+     "cljc",
+     "edn"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80g5pbrrwu",
+    "public.data"
+   ],
+   "UTTypeDescription": "CMake document",
+   "UTTypeIdentifier": "org.cmake.cmake",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cmake"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "public.data"
+   ],
+   "UTTypeDescription": "Cocoapod podspec",
+   "UTTypeIdentifier": "org.cocoapods.podspec",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "podspec"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Coffee source files",
+   "UTTypeIdentifier": "org.coffee.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "coffee"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Groovy Source Code",
+   "UTTypeIdentifier": "org.codehaus.groovy-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "groovy"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge80g6u"
+   ],
+   "UTTypeDescription": "Crystal source file",
+   "UTTypeIdentifier": "org.crystal-lang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cr"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "CSON source files",
+   "UTTypeIdentifier": "org.cson.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cson"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Erlang Source File",
+   "UTTypeIdentifier": "org.erlang.erlang-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "erl",
+     "hrl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "public.data"
+   ],
+   "UTTypeDescription": "Elixir source code",
+   "UTTypeIdentifier": "org.elixir-lang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ex",
+     "exs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Fish source files",
+   "UTTypeIdentifier": "org.fish.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "fish"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81k7d2",
+    "public.xml"
+   ],
+   "UTTypeDescription": "XML Font Tool file",
+   "UTTypeIdentifier": "org.fonttools.ttx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ttx"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "GCC-linked files",
+   "UTTypeIdentifier": "org.gcc.files",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ld",
+     "map",
+     "d"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "public.plain-text",
+    "public.text",
+    "public.data",
+    "public.item",
+    "public.content",
+    "dyn.ah62d4rv4ge80s52"
+   ],
+   "UTTypeDescription": "Go Source File",
+   "UTTypeIdentifier": "org.go.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "go"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80s6xbqv0gn"
+   ],
+   "UTTypeDescription": "Gradle Source File",
+   "UTTypeIdentifier": "org.gradle.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gradle"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Haskell Source File",
+   "UTTypeIdentifier": "org.haskell.haskell-source",
+   "UTTypeReferenceURL": "http://www.haskell.org/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "hs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "com.unknown.lhs"
+   ],
+   "UTTypeDescription": "Literate Haskell Source File",
+   "UTTypeIdentifier": "org.haskell.literate-haskell-source",
+   "UTTypeReferenceURL": "http://www.haskell.org/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lhs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge81g25q"
+   ],
+   "UTTypeIdentifier": "org.huygens-fokker.scala",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "scl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml",
+    "dyn.ah62d4rv4ge806252"
+   ],
+   "UTTypeIdentifier": "org.idpf.ncx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ncx"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xnl",
+    "dyn.ah62d4rv4ge8086dg"
+   ],
+   "UTTypeIdentifier": "org.idpf.opf",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "opf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "INNO source files",
+   "UTTypeIdentifier": "org.inno.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "iss"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "public.item",
+    "dyn.ah62d4rv4ge80y5a",
+    "public.data"
+   ],
+   "UTTypeDescription": "Julia source file",
+   "UTTypeIdentifier": "org.julialang.julia",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "JSON with comments",
+   "UTTypeIdentifier": "org.json.jsonc",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jsonc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80y65tr24u",
+    "public.json"
+   ],
+   "UTTypeIdentifier": "org.json5.json5",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "json5"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80y65tr30a",
+    "public.json"
+   ],
+   "UTTypeIdentifier": "org.jsonlines.jsonl",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jsonl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.json",
+    "dyn.ah62d4rv4ge80w6d3r3va"
+   ],
+   "UTTypeDescription": "Jupyter Notebook",
+   "UTTypeIdentifier": "org.jupyter.ipynb",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ipynb"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "KERMETA source files",
+   "UTTypeIdentifier": "org.kmt.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "kmt"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "ATL files",
+   "UTTypeIdentifier": "org.km3",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "atl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge8007a"
+   ],
+   "UTTypeDescription": "Kotlin Source File",
+   "UTTypeIdentifier": "org.kotlinlang.kotlin-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "kts",
+     "kt"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge8007a"
+   ],
+   "UTTypeDescription": "Kotlin Source File",
+   "UTTypeIdentifier": "org.kotlinlang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "kts",
+     "kt"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Less stylesheet",
+   "UTTypeIdentifier": "org.lesscss.less",
+   "UTTypeReferenceURL": "http://lesscss.org",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "less"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge8028k"
+   ],
+   "UTTypeDescription": "Lilypond source file",
+   "UTTypeIdentifier": "org.lilypond.files",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ly",
+     "ily"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "org.tug.lua"
+   ],
+   "UTTypeDescription": "Lua Source File",
+   "UTTypeIdentifier": "org.lua.lua-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lua"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml",
+    "dyn.ah62d4rv4ge8022p3"
+   ],
+   "UTTypeDescription": "MAMEdev layout file",
+   "UTTypeIdentifier": "org.mamedev.lay",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lay"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "INF files",
+   "UTTypeIdentifier": "org.microsoft.inf",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "inf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80462",
+    "public.item"
+   ],
+   "UTTypeIdentifier": "org.miniscript.ms",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ms"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml",
+    "dyn.ah62d4rv4ge8046de"
+   ],
+   "UTTypeDescription": "MPEG Media Presentation Description",
+   "UTTypeIdentifier": "org.mpeg.mpd",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mpd"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "NFO files",
+   "UTTypeIdentifier": "org.nfo",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "nfo"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge80c75p"
+   ],
+   "UTTypeDescription": "G(AWK) Source File",
+   "UTTypeIdentifier": "org.n8gray.awk",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "awk"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "DOS Batch Source File",
+   "UTTypeIdentifier": "org.n8gray.bat",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bat",
+     "cmd"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.script",
+    "public.patch-file"
+   ],
+   "UTTypeDescription": "Diff File",
+   "UTTypeIdentifier": "org.n8gray.diff-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "diff",
+     "patch"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "IDL Source File",
+   "UTTypeIdentifier": "org.n8gray.idl",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "pro"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": ".ini Source File",
+   "UTTypeIdentifier": "org.n8gray.ini-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ini"
+    ],
+    "public.mime-type": "text/x-ini"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml"
+   ],
+   "UTTypeDescription": "Java Web Installer (XML)",
+   "UTTypeIdentifier": "org.n8gray.javaInstaller",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jnlp"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "JSP Source File",
+   "UTTypeIdentifier": "org.n8gray.jsp-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "jsp"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "org.clojure"
+   ],
+   "UTTypeDescription": "Lisp Source File",
+   "UTTypeIdentifier": "org.n8gray.lisp",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sb",
+     "lisp",
+     "lsp",
+     "asd",
+     "el"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Makefile Source File",
+   "UTTypeIdentifier": "org.n8gray.makefile",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mk",
+     "mak"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Ruby on Rails File",
+   "UTTypeIdentifier": "org.n8gray.railstemplate",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rhtml",
+     "erb",
+     "rjs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "scheme Source File",
+   "UTTypeIdentifier": "org.n8gray.scheme-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "scm",
+     "ss",
+     "sls",
+     "sps",
+     "sld",
+     "sch"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Standard ML Source File",
+   "UTTypeIdentifier": "org.n8gray.standard-ml-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge81g6pq"
+   ],
+   "UTTypeDescription": "SQL Source File",
+   "UTTypeIdentifier": "org.n8gray.structured-query-language-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sql"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Verilog Source File",
+   "UTTypeIdentifier": "org.n8gray.verilog",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "v"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "VHDL Source File",
+   "UTTypeIdentifier": "org.n8gray.vhdl",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "vhdl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "XHTML Source File",
+   "UTTypeIdentifier": "org.n8gray.xhtml",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xhtml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge80g4xx",
+    "com.netscape.javascript-source",
+    "public.script",
+    "public.source-code",
+    "public.plain-text",
+    "public.text"
+   ],
+   "UTTypeDescription": "",
+   "UTTypeIdentifier": "org.nodejs.cjs",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cjs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "OCaml Interface File",
+   "UTTypeIdentifier": "org.ocaml.ocaml-interface",
+   "UTTypeReferenceURL": "http://www.ocaml.org/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "mli"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "OCaml File",
+   "UTTypeIdentifier": "org.ocaml.ocaml-source",
+   "UTTypeReferenceURL": "http://www.ocaml.org/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ml",
+     "mll",
+     "mly"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml"
+   ],
+   "UTTypeDescription": "ECore files",
+   "UTTypeIdentifier": "org.omg.ecore",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ecore"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81g25bqu",
+    "public.c-plus-plus-source",
+    "public.source-code",
+    "public.plain-text",
+    "public.text"
+   ],
+   "UTTypeIdentifier": "org.openscad.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "scad"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge8086drru"
+   ],
+   "UTTypeDescription": "Outline Processor Markup Language (OPML) file",
+   "UTTypeIdentifier": "org.opml.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "opml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81a3deru",
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Planning Domain Description Language",
+   "UTTypeIdentifier": "org.pddl.pddl",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "pddl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.perl-script",
+    "dyn.ah62d4rv4ge81k"
+   ],
+   "UTTypeIdentifier": "org.perl.test-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "t"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item"
+   ],
+   "UTTypeDescription": "Compiled python script",
+   "UTTypeIdentifier": "org.python.compiled-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "pyc"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text",
+    "dyn.ah62d4rv4ge81e2prru"
+   ],
+   "UTTypeIdentifier": "org.raml.raml",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "raml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.data",
+    "public.item",
+    "public.content",
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Racket source file",
+   "UTTypeIdentifier": "org.racket-lang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rkt"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "RDF files",
+   "UTTypeIdentifier": "org.rdf.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rdf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "RubyGems Gemspec file",
+   "UTTypeIdentifier": "org.rubygems.gemspec",
+   "UTTypeReferenceURL": "http://guides.rubygems.org/specification-reference/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gemspec"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Rust source",
+   "UTTypeIdentifier": "org.rust-lang.rust",
+   "UTTypeReferenceURL": "http://rust-lang.org",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rs",
+     "rlib"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge81e62"
+   ],
+   "UTTypeDescription": "Rust Source File",
+   "UTTypeIdentifier": "org.rust-lang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rs"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81g2phqy",
+    "public.data"
+   ],
+   "UTTypeIdentifier": "org.sagemath.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sage"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Conf Source File",
+   "UTTypeIdentifier": "org.sbarex.conf",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "conf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Dart Source File",
+   "UTTypeIdentifier": "org.sbarex.dart",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dart"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Microsoft Powershell source file",
+   "UTTypeIdentifier": "org.sbarex.ms-powershell",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ps1"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Microsoft Powershell module file",
+   "UTTypeIdentifier": "org.sbarex.ms-powershell-module",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "psm1"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Microsoft Powershell module manifest",
+   "UTTypeIdentifier": "org.sbarex.ms-powershell-module-manifest",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "psd1"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Nim Source File",
+   "UTTypeIdentifier": "org.sbarex.nim",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "nim"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge81g22",
+    "dyn.ah62d4rv4ge81g25brvuu"
+   ],
+   "UTTypeDescription": "Scala Source Code",
+   "UTTypeIdentifier": "org.scala.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sc",
+     "sbt",
+     "mill",
+     "scala"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "dyn.ah62d4rv4ge81g5pbrvyu"
+   ],
+   "UTTypeDescription": "Smali source file",
+   "UTTypeIdentifier": "org.smali.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "smali"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81g55q",
+    "public.data"
+   ],
+   "UTTypeIdentifier": "org.soliditylang.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sol"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text",
+    "public.data",
+    "dyn.ah62d4rv4ge80q3pb"
+   ],
+   "UTTypeDescription": "OpenType feature syntax",
+   "UTTypeIdentifier": "org.unifiedfontobject.fea",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "fea"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Vim script file",
+   "UTTypeIdentifier": "org.vim.vim-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "vim"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.item",
+    "public.data"
+   ],
+   "UTTypeDescription": "Vue source file",
+   "UTTypeIdentifier": "org.vuejs.vue",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "vue"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "dyn.ah62d4rv4ge81e55cr74g8",
+    "public.text",
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Robot Framework File",
+   "UTTypeIdentifier": "org.robotframework.robot",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "robot"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml",
+    "dyn.ah62d4rv4ge81s65eru"
+   ],
+   "UTTypeIdentifier": "org.w3.wsdl",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "wsdl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xsd",
+    "public.xml",
+    "public.item",
+    "dyn.ah62d4rv4ge81u6pzqz3hw",
+    "dyn.ah62d4rv4ge81u6k",
+    "dyn.ah62d4rv4ge81u7k"
+   ],
+   "UTTypeDescription": "XSD/XQuery/ProfRaw Source File",
+   "UTTypeIdentifier": "org.xml-tools.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xsd",
+     "xquery",
+     "xq",
+     "xu"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xsd",
+    "publix.xml",
+    "public.item",
+    "dyn.ah62d4rv4ge81u65e"
+   ],
+   "UTTypeDescription": "XSD Schema",
+   "UTTypeIdentifier": "org.xsd.schema",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xsd"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "XUL files",
+   "UTTypeIdentifier": "org.xul.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xul"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Yaml document",
+   "UTTypeIdentifier": "org.yaml.yaml",
+   "UTTypeReferenceURL": "http://yaml.org",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "yml",
+     "yaml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "public.shell-script"
+   ],
+   "UTTypeDescription": "Bash Script",
+   "UTTypeIdentifier": "public.bash-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bash"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "CSS File",
+   "UTTypeIdentifier": "public.css",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "css"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeIdentifier": "public.php-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "php"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "Property file",
+   "UTTypeIdentifier": "public.properties",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "properties"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.tex"
+   ],
+   "UTTypeDescription": "TeX text file",
+   "UTTypeIdentifier": "public.tex",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "tex",
+     "latex",
+     "ltx",
+     "texi",
+     "ctx",
+     "sty",
+     "cls"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeIdentifier": "public.text",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": "text"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "TSX script",
+   "UTTypeIdentifier": "public.tsx",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "tsx"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.script"
+   ],
+   "UTTypeDescription": "TypeScript script",
+   "UTTypeIdentifier": "public.typescript",
+   "UTTypeReferenceURL": "http://typescriptlang.org/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ts",
+     "tsx",
+     "mts",
+     "cts"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "public.shell-script"
+   ],
+   "UTTypeDescription": "Zsh Script",
+   "UTTypeIdentifier": "public.zsh-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "zsh"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Tcl Source File",
+   "UTTypeIdentifier": "tk.tcl.tcl-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "tcl"
+    ]
+   }
+  }
+ ],
+ "imported": [
+  {
+   "UTTypeConformsTo": [
+    "public.xml",
+    "dyn.ah62d4rv4ge81g3pvsy"
+   ],
+   "UTTypeDescription": "Adobe Acrobat Sequence",
+   "UTTypeIdentifier": "com.adobe.acrobat.sequ",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "sequ"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "R source file",
+   "UTTypeIdentifier": "com.apple.rez-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "r"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "INI configuration file",
+   "UTTypeIdentifier": "com.barebones.bbedit.ini-configuration",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cfg",
+     "ini"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "dyn.ah62d4rv4ge81g25xsq"
+   ],
+   "UTTypeDescription": "SCSS source file",
+   "UTTypeIdentifier": "com.barebones.bbedit.scss-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "scss"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "TeX source file",
+   "UTTypeIdentifier": "com.barebones.bbedit.tex-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "tex",
+     "latex"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "TypeScript source file",
+   "UTTypeIconFile": "BBEditTextDocument.icns",
+   "UTTypeIdentifier": "com.barebones.bbedit.typescript-source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ts",
+     "tsx",
+     "mts",
+     "cts"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml"
+   ],
+   "UTTypeDescription": "Google Earth KML Document",
+   "UTTypeIdentifier": "com.google.earth.kml",
+   "UTTypeReferenceURL": "http://earth.google.com/kml/",
+   "UTTypeTagSpecification": {
+    "com.apple.ostype": "GKml",
+    "public.filename-extension": [
+     "kml"
+    ],
+    "public.mime-type": "application/vnd.google-earth.kml+xml"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.script"
+   ],
+   "UTTypeDescription": "CGI script",
+   "UTTypeIdentifier": "com.macromates.textmate.cgi-script",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cgi",
+     "fcgi"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "Configuration file",
+   "UTTypeIconFile": "Config",
+   "UTTypeIdentifier": "com.macromates.textmate.config-file",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "cfg",
+     "conf",
+     "config",
+     "htaccess"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Lisp source",
+   "UTTypeIconFile": "Lisp",
+   "UTTypeIdentifier": "com.macromates.textmate.lisp",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "lisp",
+     "cl",
+     "l",
+     "lsp",
+     "mud",
+     "el"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.plain-text"
+   ],
+   "UTTypeDescription": "TeX File",
+   "UTTypeIdentifier": "edu.uo.texshop.tex",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "tex"
+    ],
+    "public.mime-type": [
+     "application/x-tex"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "D source",
+   "UTTypeIconFile": "D",
+   "UTTypeIdentifier": "org.dlang.d",
+   "UTTypeReferenceURL": "https://dlang.org",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "d",
+     "di"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.json",
+    "dyn.ah62d4rv4ge80g2pss3u1g"
+   ],
+   "UTTypeDescription": "JSON Canvas",
+   "UTTypeIdentifier": "org.jsoncanvas.canvas",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "canvas"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.json",
+    "public.text",
+    "public.data",
+    "public.item",
+    "public.content",
+    "public.3d-content"
+   ],
+   "UTTypeDescription": "Graphics Language Transmission Format ",
+   "UTTypeIdentifier": "org.khronos.gltf",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gltf"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "reStructuredText document",
+   "UTTypeIconFile": "reST",
+   "UTTypeIdentifier": "org.python.restructuredtext",
+   "UTTypeReferenceURL": "http://docutils.sourceforge.net/rst.html",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rst",
+     "rest"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "R source",
+   "UTTypeIdentifier": "org.r-project.r",
+   "UTTypeReferenceURL": "http://www.r-project.org",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "r",
+     "s"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.html"
+   ],
+   "UTTypeDescription": "HTML with embedded Ruby",
+   "UTTypeIconFile": "RHTML",
+   "UTTypeIdentifier": "org.ruby-lang.eruby",
+   "UTTypeReferenceURL": "https://www.ruby-lang.org/en/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "rhtml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "SQL with embedded Ruby",
+   "UTTypeIconFile": "SQL",
+   "UTTypeIdentifier": "org.rubyonrails.erb-sql",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "erbsql"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "BibTeX Database",
+   "UTTypeIconFile": "BibTeX",
+   "UTTypeIdentifier": "org.tug.tex.bibtex",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "bib"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "Cascading Style Sheet",
+   "UTTypeIconFile": "CSS",
+   "UTTypeIdentifier": "org.w3.css",
+   "UTTypeReferenceURL": "http://www.w3.org/Style/CSS/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "css"
+    ],
+    "public.mime-type": "text/css"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.text"
+   ],
+   "UTTypeDescription": "Document Type Definition",
+   "UTTypeIconFile": "DTD",
+   "UTTypeIdentifier": "org.w3.xml-dtd",
+   "UTTypeReferenceURL": "http://www.w3.org/XML/",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dtd"
+    ],
+    "public.mime-type": "application/xml-dtd"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml"
+   ],
+   "UTTypeIdentifier": "org.w3.xsl",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xsl"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Ada source",
+   "UTTypeIconFile": "ADA",
+   "UTTypeIdentifier": "public.ada-source",
+   "UTTypeReferenceURL": "http://en.wikipedia.org/wiki/Ada_(programming_language)",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "ada",
+     "adb",
+     "ads"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code"
+   ],
+   "UTTypeDescription": "Dylan source",
+   "UTTypeIconFile": "Dylan",
+   "UTTypeIdentifier": "public.dylan-source",
+   "UTTypeReferenceURL": "http://opendylan.org",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "dylan"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": "public.text",
+   "UTTypeDescription": "XML text",
+   "UTTypeIdentifier": "public.xml",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xml",
+     "plist"
+    ],
+    "public.mime-type": [
+     "application/xml",
+     "text/xml"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.script",
+    "dyn.ah62d4rv4ge80s3a"
+   ],
+   "UTTypeDescription": "Godot Script",
+   "UTTypeIdentifier": "public.gd",
+   "UTTypeReferenceURL": "",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gd"
+    ],
+    "public.mime-type": "text/x-gdscript"
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.source-code",
+    "public.plain-text",
+    "public.text"
+   ],
+   "UTTypeIdentifier": "run.gleam.source",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "gleam"
+    ]
+   }
+  },
+  {
+   "UTTypeDescription": "Python Bytecode Document",
+   "UTTypeIdentifier": "dyn.ah62d4rv4ge81a8p",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "pyc",
+     "pyo"
+    ]
+   }
+  },
+  {
+   "UTTypeConformsTo": [
+    "public.xml"
+   ],
+   "UTTypeIdentifier": "dyn.ah62d46dzqm0gw23stb002svvhz6g45a",
+   "UTTypeTagSpecification": {
+    "public.filename-extension": [
+     "xml"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "squint-bundle",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "type": "module",
+  "dependencies": {
+    "@shikijs/primitive": "^4.5.0",
+    "esbuild": "^0.28.2",
+    "shiki": "^4.5.0"
+  },
+  "private": true
+}
