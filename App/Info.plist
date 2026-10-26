@@ -570,6 +570,8 @@
 	<string>AppIcon</string>
 	<key>CFBundleIconName</key>
 	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.martin.Squint</string>
 	<key>CFBundleInfoDictionaryVersion</key>
