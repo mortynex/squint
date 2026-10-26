@@ -27,13 +27,7 @@ BUILD=$(git rev-list --count HEAD 2>/dev/null || echo 1)
 for plist in "$EXT/Contents/Info.plist" "$APP/Contents/Info.plist"; do
   /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $VERSION" -c "Set :CFBundleVersion $BUILD" "$plist"
 done
-# Liquid Glass icon (Assets.car + AppIcon.icns) via actool; the prebuilt flat .icns without Xcode
-if xcrun --find actool >/dev/null 2>&1; then
-  xcrun actool App/AppIcon.icon --compile "$APP/Contents/Resources" --app-icon AppIcon --platform macosx \
-    --minimum-deployment-target 13.0 --output-partial-info-plist build/icon-partial.plist >/dev/null
-else
-  cp App/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
-fi
+[ -f App/AppIcon.icns ] && cp App/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 cp -R Resources/. "$EXT/Contents/Resources/"
 
 sign() {
