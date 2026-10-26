@@ -130,10 +130,14 @@ def icon():
     ink = p.halftone(dark, 17, toner) | p.outline(pen, 6)
     ink &= p.blur(pen.astype(float), 3) > 0.02
 
-    # Only big halftone clouds, gathered in the bottom-left corner.
-    corner = np.clip(1.25 - np.hypot(p.x, n - p.y) / (n * 0.5), 0, 1)
-    cloud = np.clip(corner * (0.5 + p.fbm((3, 6, 12, 24))) * 1.4, 0, 1)
-    dots = p.spill(19, p.blur(pen.astype(float), 18) > 0.05, weight=cloud).astype(float)
+    # Three soft halftone clouds on clean paper. The two random ones (left, bottom) depend on the random
+    # sequence, so dirt() still runs first even though its specks aren't used.
+    keep = p.blur(pen.astype(float), 18) > 0.05
+    p.dirt()
+    clouds = p.spill(17, keep)
+    bump = np.exp(-((p.x - n * 0.86) ** 2 + (p.y - n * 0.6) ** 2) / (2 * (n * 0.1) ** 2))
+    clouds |= p.spill(17, keep, weight=np.clip(bump * (0.55 + 0.6 * p.fbm((3, 6, 12, 24))), 0, 1))
+    dots = clouds.astype(float)
 
     clean, _ = pen_mask(p.x, p.y, n)
     out = os.path.join(ROOT, "App/AppIcon.icon/Assets")
@@ -176,16 +180,18 @@ def dmg():
     ink |= p.halftone(shade, 13, toner) & (p.blur(arrow.astype(float), 3) > 0.02)
     ink |= p.outline(arrow, 4)
 
-    # Keep the icons and their labels readable: no spill or heavy dirt around them.
+    # Soft halftone clouds on clean paper, kept off the icons, their labels and the text.
     around = np.zeros((h, w), bool)
     for cx, cy in (app, apps):
         around |= ((p.x - cx) ** 2 / (95 * s) ** 2 + (p.y - cy - 12 * s) ** 2 / (95 * s) ** 2) < 1
     clear = around | (p.blur((title | tagline | hint | arrow).astype(float), 14) > 0.02)
-    background = p.spill(13, clear, 0.6) | (p.dirt(70) & ~around)
+    weight = np.zeros((h, w))
+    for cx, cy, r in ((70, 70, 70), (330, 360, 75), (590, 330, 60)):
+        bump = np.exp(-((p.x - cx * s) ** 2 + (p.y - cy * s) ** 2) / (2 * (r * s) ** 2))
+        weight = np.maximum(weight, bump * (0.55 + 0.6 * p.fbm((3, 6, 12, 24))))
+    background = p.spill(13, clear, weight=np.clip(weight, 0, 1))
 
-    paper = p.paper()
-    paper = np.where(p.grid(22, 5) & ~around, paper - 30, paper)
-    img = np.where(ink | background, p.tone(), paper)
+    img = np.where(ink | background, p.tone(), p.paper())
     out = Image.fromarray(np.clip(img, 0, 255).astype(np.uint8)).convert("RGB")
     out.save(os.path.join(ROOT, "tools/dmg/background@2x.png"), dpi=(144, 144))
     out.resize((640, 400), Image.LANCZOS).save(os.path.join(ROOT, "tools/dmg/background.png"), dpi=(72, 72))
