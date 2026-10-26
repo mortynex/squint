@@ -15,6 +15,8 @@ struct Settings: Codable, Equatable {
     // Editor (app window) only.
     /// The whole editor window is translucent glass, like the Quick Look window.
     var glassWindow = true
+    /// Halftone clouds in the editor window's glass.
+    var glassClouds = true
     var tabSize = 4
     var insertSpaces = true
     var detectIndentation = true
@@ -35,6 +37,7 @@ struct Settings: Codable, Equatable {
         wrapLines = try c.decodeIfPresent(Bool.self, forKey: .wrapLines) ?? d.wrapLines
         transparentBackground = try c.decodeIfPresent(Bool.self, forKey: .transparentBackground) ?? d.transparentBackground
         glassWindow = try c.decodeIfPresent(Bool.self, forKey: .glassWindow) ?? d.glassWindow
+        glassClouds = try c.decodeIfPresent(Bool.self, forKey: .glassClouds) ?? d.glassClouds
         tabSize = try c.decodeIfPresent(Int.self, forKey: .tabSize) ?? d.tabSize
         insertSpaces = try c.decodeIfPresent(Bool.self, forKey: .insertSpaces) ?? d.insertSpaces
         detectIndentation = try c.decodeIfPresent(Bool.self, forKey: .detectIndentation) ?? d.detectIndentation

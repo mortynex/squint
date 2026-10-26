@@ -85,6 +85,8 @@ struct SettingsView: View {
             }
             Section("Editor") {
                 Toggle("Glass window", isOn: $model.settings.glassWindow)
+                Toggle("Halftone clouds in the glass", isOn: $model.settings.glassClouds)
+                    .disabled(!model.settings.glassWindow)
                 Toggle("Line numbers", isOn: $model.settings.lineNumbers)
                 Toggle("Wrap long lines", isOn: $model.settings.wrapLines)
                 Toggle("Highlight current line", isOn: $model.settings.highlightCurrentLine)

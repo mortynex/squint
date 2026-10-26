@@ -6,6 +6,7 @@ import AppKit
 final class WindowContentController: NSViewController {
     let split: NSSplitViewController
     private var background: NSView?
+    private var clouds: HalftoneCloudsView?
 
     init(split: NSSplitViewController) {
         self.split = split
@@ -26,6 +27,9 @@ final class WindowContentController: NSViewController {
     override func viewDidLayout() {
         super.viewDidLayout()
         matchSidebar()
+        if let clouds, let bar = (split.splitViewItems.last?.viewController as? EditorViewController)?.statusBar {
+            clouds.bottomInset = bar.isHidden ? 0 : clouds.bounds.maxY - bar.convert(bar.bounds, to: clouds).minY
+        }
     }
 
     var isGlass: Bool { background != nil }
@@ -38,10 +42,38 @@ final class WindowContentController: NSViewController {
         }
     }
 
+    /// Colour of the halftone clouds over the glass (the theme's text colour, faint).
+    var cloudColor: NSColor = .labelColor {
+        didSet { clouds?.color = cloudColor }
+    }
+
+    /// Halftone clouds over the glass (only while there is glass).
+    var showsClouds = true {
+        didSet { updateClouds() }
+    }
+
+    private func updateClouds() {
+        let clip = background?.superview
+        guard showsClouds, let clip else {
+            clouds?.removeFromSuperview()
+            clouds = nil
+            return
+        }
+        guard clouds == nil else { return }
+        let c = HalftoneCloudsView(frame: clip.bounds)
+        c.autoresizingMask = [.width, .height]
+        c.layerContentsRedrawPolicy = .duringViewResize
+        c.color = cloudColor
+        clip.addSubview(c)
+        clouds = c
+        view.needsLayout = true
+    }
+
     func setGlass(_ on: Bool) {
         guard on != isGlass else { return }
         background?.superview?.removeFromSuperview()
         background = nil
+        clouds = nil
         defer { matchSidebar() }
         guard on else { return }
         let bg: NSView
@@ -77,6 +109,7 @@ final class WindowContentController: NSViewController {
         bg.autoresizingMask = [.width, .height]
         clip.addSubview(bg)
         background = bg
+        updateClouds()
     }
 
     /// The glass or material the split view puts behind the sidebar item.
@@ -224,7 +257,9 @@ final class EditorWindowController: NSWindowController, NSWindowDelegate, NSTool
         let glass = editor.settings.glassWindow
         let strength = UserDefaults.standard.object(forKey: "GlassTint") as? Double ?? 0.45
         content.tint = palette.bg.withAlphaComponent(strength)
+        content.cloudColor = palette.fg.withAlphaComponent(UserDefaults.standard.object(forKey: "GlassCloudOpacity") as? Double ?? 0.12)
         content.setGlass(glass)
+        content.showsClouds = editor.settings.glassClouds
         window.isOpaque = !glass
         window.backgroundColor = glass ? .clear : palette.bg
     }
