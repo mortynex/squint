@@ -63,7 +63,7 @@ can't be reassigned programmatically.
 ```sh
 (cd js && npm install && ./build.sh)   # bundles Shiki: Resources/core.js, langs/, themes/, themes.json, langs.json
 python3 tools/gen-utis.py              # regenerates the declared content types (Extension/ and App/ Info.plist)
-swift tools/make-icon.swift            # regenerates App/AppIcon.icns
+tools/make-icon.sh                     # renders App/AppIcon.icon into the fallback App/AppIcon.icns
 ./build.sh                             # build/Squint.app (ad-hoc signed)
 ./install.sh                           # copies to /Applications and registers the extension
 test/editor.sh                         # headless editor tests (see below)
