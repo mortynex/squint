@@ -34,6 +34,15 @@ final class WindowContentController: NSViewController {
 
     var isGlass: Bool { background != nil }
 
+    /// Clear rather than regular Liquid Glass (macOS 26).
+    var clearGlass = false {
+        didSet {
+            guard clearGlass != oldValue, isGlass else { return }
+            setGlass(false)
+            setGlass(true)
+        }
+    }
+
     /// A light wash of the theme's background over the glass, so code stays readable on busy backgrounds.
     var tint: NSColor? {
         didSet {
@@ -77,7 +86,7 @@ final class WindowContentController: NSViewController {
         defer { matchSidebar() }
         guard on else { return }
         let bg: NSView
-        let style = UserDefaults.standard.string(forKey: "GlassStyle") ?? "glass"
+        let style = clearGlass ? "clear" : UserDefaults.standard.string(forKey: "GlassStyle") ?? "glass"
         if #available(macOS 26.0, *), style == "glass" || style == "clear" {
             let glass = NSGlassEffectView()
             glass.style = style == "clear" ? .clear : .regular
@@ -255,9 +264,9 @@ final class EditorWindowController: NSWindowController, NSWindowDelegate, NSTool
     private func applyBackground(_ palette: Palette) {
         guard let window else { return }
         let glass = editor.settings.glassWindow
-        let strength = UserDefaults.standard.object(forKey: "GlassTint") as? Double ?? 0.45
-        content.tint = palette.bg.withAlphaComponent(strength)
+        content.tint = palette.bg.withAlphaComponent(editor.settings.glassOpacity)
         content.cloudColor = palette.fg.withAlphaComponent(UserDefaults.standard.object(forKey: "GlassCloudOpacity") as? Double ?? 0.12)
+        content.clearGlass = editor.settings.glassClear
         content.setGlass(glass)
         content.showsClouds = editor.settings.glassClouds
         window.isOpaque = !glass

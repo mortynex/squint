@@ -17,6 +17,10 @@ struct Settings: Codable, Equatable {
     var glassWindow = true
     /// Halftone clouds in the editor window's glass.
     var glassClouds = true
+    /// Clear (more see-through) Liquid Glass instead of the regular style. macOS 26 only.
+    var glassClear = false
+    /// How strongly the theme's background washes over the glass, 0 (bare glass) to 1 (opaque).
+    var glassOpacity = 0.45
     var tabSize = 4
     var insertSpaces = true
     var detectIndentation = true
@@ -38,6 +42,8 @@ struct Settings: Codable, Equatable {
         transparentBackground = try c.decodeIfPresent(Bool.self, forKey: .transparentBackground) ?? d.transparentBackground
         glassWindow = try c.decodeIfPresent(Bool.self, forKey: .glassWindow) ?? d.glassWindow
         glassClouds = try c.decodeIfPresent(Bool.self, forKey: .glassClouds) ?? d.glassClouds
+        glassClear = try c.decodeIfPresent(Bool.self, forKey: .glassClear) ?? d.glassClear
+        glassOpacity = try c.decodeIfPresent(Double.self, forKey: .glassOpacity) ?? d.glassOpacity
         tabSize = try c.decodeIfPresent(Int.self, forKey: .tabSize) ?? d.tabSize
         insertSpaces = try c.decodeIfPresent(Bool.self, forKey: .insertSpaces) ?? d.insertSpaces
         detectIndentation = try c.decodeIfPresent(Bool.self, forKey: .detectIndentation) ?? d.detectIndentation

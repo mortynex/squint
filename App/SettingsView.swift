@@ -85,6 +85,14 @@ struct SettingsView: View {
             }
             Section("Editor") {
                 Toggle("Glass window", isOn: $model.settings.glassWindow)
+                if #available(macOS 26.0, *) {
+                    Toggle("Clear glass", isOn: $model.settings.glassClear)
+                        .disabled(!model.settings.glassWindow)
+                }
+                LabeledContent("Glass opacity: \(Int((model.settings.glassOpacity * 100).rounded()))%") {
+                    Slider(value: $model.settings.glassOpacity, in: 0...1, step: 0.05)
+                }
+                .disabled(!model.settings.glassWindow)
                 Toggle("Halftone clouds in the glass", isOn: $model.settings.glassClouds)
                     .disabled(!model.settings.glassWindow)
                 Toggle("Line numbers", isOn: $model.settings.lineNumbers)
