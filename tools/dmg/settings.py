@@ -1,5 +1,5 @@
 # dmgbuild settings for the release DMG (used by release.sh).
-# Icon positions must match tools/make-dmg-background.swift.
+# Icon positions must match dmg() in tools/print-art.py.
 import os.path
 
 app = defines["app"]

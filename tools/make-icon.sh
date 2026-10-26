@@ -1,9 +1,16 @@
 #!/bin/sh
-# Renders App/AppIcon.icon (the Liquid Glass icon, edit it in Icon Composer) into App/AppIcon.icns,
-# the flat fallback build.sh uses when actool isn't available.
-# Usage: tools/make-icon.sh
+# Redraws the printed artwork with tools/print-art.py (numpy + Pillow, in a venv under build/):
+#   tools/make-icon.sh       the App/AppIcon.icon layers, then App/AppIcon.icns, the flat fallback
+#                            build.sh uses when actool isn't available
+#   tools/make-icon.sh dmg   the DMG window background in tools/dmg/
 set -e
 cd "$(dirname "$0")/.."
+VENV=build/art-venv
+[ -x "$VENV/bin/python" ] && "$VENV/bin/python" -c "import numpy, PIL" 2>/dev/null ||
+  { python3 -m venv "$VENV" && "$VENV/bin/pip" install -q numpy pillow; }
+if [ "$1" = "dmg" ]; then "$VENV/bin/python" tools/print-art.py dmg; exit; fi
+
+"$VENV/bin/python" tools/print-art.py icon
 ICTOOL="$(xcode-select -p)/../Applications/Icon Composer.app/Contents/Executables/ictool"
 SET=build/AppIcon.iconset
 rm -rf "$SET"; mkdir -p "$SET"

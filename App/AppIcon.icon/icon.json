@@ -1,61 +1,19 @@
 {
-  "fill": {
-    "linear-gradient": [
-      "display-p3:0.80000,0.80000,0.81000,1.00000",
-      "display-p3:0.52000,0.52000,0.54000,1.00000"
-    ],
-    "orientation": {
-      "start": {
-        "x": 0.5,
-        "y": 0
-      },
-      "stop": {
-        "x": 0.5,
-        "y": 1
-      }
-    }
-  },
-  "groups": [
-    {
-      "name": "tip",
-      "layers": [
-        {
-          "name": "tip",
-          "image-name": "tip.svg",
-          "glass": false,
-          "fill": {
-            "solid": "display-p3:0.96000,0.96000,0.97000,1.00000"
-          }
-        }
-      ],
-      "specular": false
-    },
-    {
-      "name": "pen",
-      "layers": [
-        {
-          "name": "body",
-          "image-name": "body.svg",
-          "glass": true,
-          "fill": {
-            "solid": "display-p3:1.00000,1.00000,1.00000,1.00000"
-          }
-        }
-      ],
-      "shadow": {
-        "kind": "neutral",
-        "opacity": 0.5
-      },
-      "specular": true,
-      "translucency": {
-        "enabled": true,
-        "value": 0.4
-      }
-    }
+  "fill-specializations" : [
+    { "value" : { "linear-gradient" : [ "display-p3:0.95000,0.95000,0.94000,1.00000", "display-p3:0.80000,0.80000,0.79000,1.00000" ] } },
+    { "appearance" : "dark", "value" : { "linear-gradient" : [ "display-p3:0.22000,0.22000,0.23000,1.00000", "display-p3:0.08000,0.08000,0.09000,1.00000" ] } }
   ],
-  "supported-platforms": {
-    "squares": [
-      "macOS"
-    ]
-  }
+  "groups" : [
+    { "name" : "glass", "layers" : [ { "name" : "shape", "image-name" : "shape.png", "glass" : true,
+        "fill" : { "solid" : "display-p3:1.00000,1.00000,1.00000,1.00000" } } ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.7 }, "specular" : true,
+      "translucency" : { "enabled" : true, "value" : 0.75 } },
+    { "name" : "print", "layers" : [
+        { "name" : "ink", "image-name" : "ink.png", "glass" : false,
+          "fill-specializations" : [ { "appearance" : "dark", "value" : { "solid" : "display-p3:0.95000,0.95000,0.95000,1.00000" } } ] },
+        { "name" : "dots", "image-name" : "dots.png", "glass" : false, "opacity" : 0.8,
+          "fill-specializations" : [ { "appearance" : "dark", "value" : { "solid" : "display-p3:0.85000,0.85000,0.85000,1.00000" } } ] } ],
+      "specular" : false }
+  ],
+  "supported-platforms" : { "squares" : [ "macOS" ] }
 }

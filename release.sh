@@ -34,7 +34,7 @@ fi
 ditto -c -k --keepParent build/Squint.app "$OUT/$NAME.zip"
 swift tools/update-key.swift sign "$OUT/$NAME.zip" > "$OUT/$NAME.zip.sig"
 
-# The DMG window layout and background come from tools/dmg (background: tools/make-dmg-background.swift),
+# The DMG window layout and background come from tools/dmg (background: tools/print-art.py dmg),
 # laid out by dmgbuild, which is installed into a venv under build/ on first use.
 VENV=build/dmg-venv
 [ -x "$VENV/bin/dmgbuild" ] || { python3 -m venv "$VENV" && "$VENV/bin/pip" install -q dmgbuild; }
