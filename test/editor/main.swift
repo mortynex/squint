@@ -101,6 +101,17 @@ if let i = CommandLine.arguments.firstIndex(of: "--showcase") {
             NSApp.appearance = NSAppearance(named: .aqua)
         case "language":
             w.showLanguagePicker()
+        case "setup":
+            DefaultApps.appBundle = URL(fileURLWithPath: "/Applications/Squint.app")
+            for c in QuickLookExtensions.status().competitors { print("COMPETITOR \(c.info.name) \(c.info.id) \(c.sharedTypes)") }
+            print("SQUINT \(QuickLookExtensions.status().squint)")
+            AppDelegate().showSetup(nil)
+            if let s = NSApp.windows.first(where: { $0.title == "Set Up Squint" }) {
+                s.setFrameOrigin(NSPoint(x: frame.minX + 60, y: frame.minY + 20))
+                print("WINDOW \(s.windowNumber)")
+                fflush(stdout)
+            }
+            return
         case "settings":
             DefaultApps.appBundle = URL(fileURLWithPath: "/Applications/Squint.app")
             let st = DefaultApps.status()

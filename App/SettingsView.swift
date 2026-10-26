@@ -19,13 +19,6 @@ private final class SettingsModel: ObservableObject {
             NotificationCenter.default.post(name: .squintSettingsChanged, object: nil)
         }
     }
-    @Published var defaults = DefaultApps.status()
-    @Published var restorable = DefaultApps.restorable
-
-    func refreshDefaults() {
-        defaults = DefaultApps.status()
-        restorable = DefaultApps.restorable
-    }
     let themes: [ThemeInfo]
     let fonts: [String]
 
@@ -103,29 +96,7 @@ struct SettingsView: View {
                 Toggle("Indent using spaces", isOn: $model.settings.insertSpaces)
                 Toggle("Detect indentation from file", isOn: $model.settings.detectIndentation)
             }
-            Section {
-                LabeledContent("Squint opens") {
-                    Text("\(model.defaults.squint) of \(model.defaults.total) file types").foregroundStyle(.secondary)
-                }
-                ForEach(model.defaults.others) { app in
-                    HStack {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(app.name)
-                            Text("\(app.types.count) type\(app.types.count == 1 ? "" : "s"): \(app.summary)").font(.caption).foregroundStyle(.secondary)
-                        }
-                        Spacer()
-                        Button("Use Squint") { takeOver(app) }
-                    }
-                }
-                if model.restorable > 0 {
-                    Button("Restore Previous Apps (\(model.restorable))") { restore() }
-                }
-            } header: {
-                Text("Default App")
-            } footer: {
-                Text("Squint opens every type it previews unless you chose another app for it. macOS asks you to confirm each type taken from another app.")
-                    .foregroundStyle(.secondary)
-            }
+            DefaultAppsSection()
             Section("Quick Look") {
                 Toggle("Transparent background", isOn: $model.settings.transparentBackground)
                 Button("Quick Look Extension Settings…") {
@@ -148,30 +119,6 @@ struct SettingsView: View {
             }
         }
         .formStyle(.grouped)
-        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in model.refreshDefaults() }
-        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didBecomeKeyNotification)) { _ in model.refreshDefaults() }
-    }
-
-    private func takeOver(_ app: DefaultApps.OtherApp) {
-        let alert = NSAlert()
-        alert.messageText = "Open \(app.types.count == 1 ? "this file type" : "these \(app.types.count) file types") with Squint instead of \(app.name)?"
-        alert.informativeText = app.summary + "\n\nmacOS will ask you to confirm each one."
-        alert.addButton(withTitle: "Use Squint")
-        alert.addButton(withTitle: "Cancel")
-        guard alert.runModal() == .alertFirstButtonReturn else { return }
-        DefaultApps.claim(app.types)
-        for delay in [1.0, 4.0, 10.0] { DispatchQueue.main.asyncAfter(deadline: .now() + delay) { model.refreshDefaults() } }
-    }
-
-    private func restore() {
-        let alert = NSAlert()
-        alert.messageText = "Give \(model.restorable) file types back to the apps that opened them before?"
-        alert.informativeText = "macOS may ask you to confirm each one."
-        alert.addButton(withTitle: "Restore")
-        alert.addButton(withTitle: "Cancel")
-        guard alert.runModal() == .alertFirstButtonReturn else { return }
-        DefaultApps.restore()
-        for delay in [1.0, 4.0, 10.0] { DispatchQueue.main.asyncAfter(deadline: .now() + delay) { model.refreshDefaults() } }
     }
 }
 

@@ -44,7 +44,8 @@ sidebar, VS Code-style editing and the status bar:
 Download `Squint-<version>.dmg` from [Releases](https://github.com/mortynex/squint/releases), open it and drag Squint
 to Applications. Squint isn't notarized yet, so the first launch is blocked: open System Settings › Privacy & Security
 and click **Open Anyway** (or run `xattr -dr com.apple.quarantine /Applications/Squint.app`). Launching it once
-registers the Quick Look extension.
+registers the Quick Look extension, and a setup guide (later: Squint › Setup Guide…) checks that the preview is on,
+offers to turn off other previewers of the same types (e.g. Syntax Highlight) and to make Squint the default app.
 
 **Updates** – Squint checks GitHub once a day (Settings › Updates, or Squint › Check for Updates…). *Install and
 Relaunch* downloads the new version, checks its signature, swaps it in when Squint quits and starts it again.
@@ -94,7 +95,7 @@ With a Developer ID certificate, `SIGN_IDENTITY="Developer ID Application: …"`
 
 ## Notes
 
-- Disable/remove the Syntax Highlight app so the two extensions don't compete.
+- Disable/remove the Syntax Highlight app so the two extensions don't compete (the setup guide offers this).
 - The extension's sandbox has one temporary exception: read-only access to `~/.config/squint/`.
 - The extension and the app both have `com.apple.security.cs.allow-jit`: without it JavaScriptCore only interprets,
   which makes grammar setup about 3× slower.

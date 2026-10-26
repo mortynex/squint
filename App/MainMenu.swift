@@ -22,6 +22,7 @@ enum MainMenu {
         menu("Squint") { m in
             m.add("About Squint", #selector(NSApplication.orderFrontStandardAboutPanel(_:)))
             m.add("Check for Updates…", #selector(Updater.checkForUpdates(_:))).target = Updater.shared
+            m.add("Setup Guide…", #selector(AppDelegate.showSetup(_:)))
             m.addItem(.separator())
             m.add("Settings…", #selector(AppDelegate.showSettings(_:)), ",")
             m.addItem(.separator())

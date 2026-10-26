@@ -3,6 +3,7 @@ import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSMenuItemValidation {
     private var settingsWindow: NSWindow?
+    private var setupWindow: NSWindow?
     private(set) var editors: [EditorWindowController] = []
     private var openedFilesAtLaunch = false
 
@@ -14,6 +15,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSMenu
         NSApp.mainMenu = MainMenu.build(recentDelegate: self)
         let isDefaultLaunch = (notification.userInfo?[NSApplication.launchIsDefaultUserInfoKey] as? Bool) ?? true
         if !openedFilesAtLaunch && isDefaultLaunch { restoreSession() }
+        if !UserDefaults.standard.bool(forKey: "SetupShown") {
+            UserDefaults.standard.set(true, forKey: "SetupShown")
+            showSetup(nil)
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) { Updater.shared.checkAutomatically() }
     }
 
@@ -194,6 +199,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSMenu
             settingsWindow = window
         }
         settingsWindow?.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
+    }
+
+    @objc func showSetup(_ sender: Any?) {
+        if setupWindow == nil {
+            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 560, height: 640),
+                                  styleMask: [.titled, .closable, .fullSizeContentView], backing: .buffered, defer: false)
+            window.title = "Set Up Squint"
+            window.contentView = NSHostingView(rootView: SetupView { [weak window] in window?.close() })
+            window.isReleasedWhenClosed = false
+            window.tabbingMode = .disallowed
+            window.center()
+            setupWindow = window
+        }
+        setupWindow?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
     }
 
