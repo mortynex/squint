@@ -34,12 +34,12 @@ fi
 ditto -c -k --keepParent build/Squint.app "$OUT/$NAME.zip"
 swift tools/update-key.swift sign "$OUT/$NAME.zip" > "$OUT/$NAME.zip.sig"
 
-STAGE=build/dmg
-rm -rf "$STAGE"; mkdir -p "$STAGE"
-cp -R build/Squint.app "$STAGE/"
-ln -s /Applications "$STAGE/Applications"
-hdiutil create -quiet -volname "Squint $VERSION" -srcfolder "$STAGE" -fs HFS+ -format UDZO -ov "$OUT/$NAME.dmg"
-rm -rf "$STAGE"
+# The DMG window layout and background come from tools/dmg (background: tools/make-dmg-background.swift),
+# laid out by dmgbuild, which is installed into a venv under build/ on first use.
+VENV=build/dmg-venv
+[ -x "$VENV/bin/dmgbuild" ] || { python3 -m venv "$VENV" && "$VENV/bin/pip" install -q dmgbuild; }
+"$VENV/bin/dmgbuild" -s tools/dmg/settings.py -D app=build/Squint.app -D settings=tools/dmg/settings.py \
+  "Squint $VERSION" "$OUT/$NAME.dmg" >/dev/null
 if [ -n "$SIGN_IDENTITY" ]; then
   codesign --force --sign "$SIGN_IDENTITY" --timestamp "$OUT/$NAME.dmg"
   if [ -n "$NOTARY_PROFILE" ]; then notarize "$OUT/$NAME.dmg"; xcrun stapler staple "$OUT/$NAME.dmg"; fi
