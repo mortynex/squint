@@ -568,6 +568,8 @@
 	<string>Squint</string>
 	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.martin.Squint</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -588,6 +590,8 @@
 	<string>NSApplication</string>
 	<key>NSSupportsAutomaticTermination</key>
 	<false/>
+	<key>SquintUpdatePublicKey</key>
+	<string>P9s/Ye+fEypjcMvdmGa6fBpAz99WwGJykL2BA2/3hGw=</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>

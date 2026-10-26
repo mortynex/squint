@@ -1168,7 +1168,7 @@ test("menu shortcuts are unique and every action has a handler") {
     let responders: [AnyClass] = [EditorTextView.self, EditorWindowController.self, AppDelegate.self, NSSplitViewController.self, NSWindow.self, NSApplication.self, NSTextView.self]
     for item in MenuTools.allItems() {
         guard let action = item.action, item.submenu == nil else { continue }
-        let handled = responders.contains { $0.instancesRespond(to: action) } || action == Selector(("undo:")) || action == Selector(("redo:"))
+        let handled = item.target?.responds(to: action) == true || responders.contains { $0.instancesRespond(to: action) } || action == Selector(("undo:")) || action == Selector(("redo:"))
         check(handled, "nobody handles \(item.title) (\(action))")
     }
     for spec in ["cmd+s", "cmd+p", "cmd+f", "cmd+opt+f", "cmd+g", "cmd+shift+g", "cmd+/", "cmd+d", "cmd+shift+l", "cmd+l", "cmd+b",

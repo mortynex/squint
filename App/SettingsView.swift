@@ -42,6 +42,7 @@ private final class SettingsModel: ObservableObject {
 struct SettingsView: View {
     @StateObject private var model = SettingsModel()
     @State private var appearance = PreviewAppearance.system
+    @State private var automaticUpdates = Updater.shared.automaticChecks
     @Environment(\.colorScheme) private var systemScheme
 
     private var previewDark: Bool {
@@ -137,6 +138,13 @@ struct SettingsView: View {
                     try? p.run()
                 }
                 Text("Quick Look changes apply the next time you press Space on a file.").foregroundStyle(.secondary).font(.footnote)
+            }
+            Section("Updates") {
+                Toggle("Check for updates automatically", isOn: $automaticUpdates)
+                    .onChange(of: automaticUpdates) { Updater.shared.automaticChecks = $0 }
+                LabeledContent("Version \(Updater.currentVersion)") {
+                    Button("Check Now") { Updater.shared.checkForUpdates(nil) }
+                }
             }
         }
         .formStyle(.grouped)

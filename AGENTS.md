@@ -16,6 +16,8 @@ macOS Quick Look extension that previews code with Shiki, plus a small native co
 
 - `./build.sh` – builds `build/Squint.app` (ad-hoc signed)
 - `./install.sh` – installs the app
+- `./release.sh [--publish]` – DMG + signed update zip for the version in `VERSION` (see README › Releasing); only
+  publish a release when asked
 - `test/snap.sh`, `test/editor.sh` – render/editor checks
 - `cd js && npm install && ./build.sh` – regenerate `Resources/` after changing `js/`
 

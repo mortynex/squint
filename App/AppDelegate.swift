@@ -14,6 +14,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSMenu
         NSApp.mainMenu = MainMenu.build(recentDelegate: self)
         let isDefaultLaunch = (notification.userInfo?[NSApplication.launchIsDefaultUserInfoKey] as? Bool) ?? true
         if !openedFilesAtLaunch && isDefaultLaunch { restoreSession() }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { Updater.shared.checkAutomatically() }
     }
 
     func application(_ application: NSApplication, open urls: [URL]) {
@@ -38,9 +39,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSMenu
         saveSession()
         let dirty = editors.filter { $0.editor.hasDocument && $0.editor.isDirty }
         guard !dirty.isEmpty else { return .terminateNow }
-        confirm(dirty) { ok in NSApp.reply(toApplicationShouldTerminate: ok) }
+        confirm(dirty) { ok in
+            if !ok { Updater.shared.relaunch = false }
+            NSApp.reply(toApplicationShouldTerminate: ok)
+        }
         return .terminateLater
     }
+
+    func applicationWillTerminate(_ notification: Notification) { Updater.shared.installStagedUpdate() }
 
     private func confirm(_ windows: [EditorWindowController], done: @escaping (Bool) -> Void) {
         guard let first = windows.first else { done(true); return }

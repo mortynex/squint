@@ -1,5 +1,6 @@
 #!/bin/sh
-# Builds build/Squint.app (ad-hoc signed). Run js/build.sh first if Resources/ is missing.
+# Builds build/Squint.app, versioned from VERSION. Run js/build.sh first if Resources/ is missing.
+# Ad-hoc signed unless SIGN_IDENTITY names a Developer ID certificate (then with the hardened runtime, for notarizing).
 set -e
 cd "$(dirname "$0")"
 [ -f Resources/core.js ] || js/build.sh
@@ -21,9 +22,24 @@ swiftc -O -target $TARGET -swift-version 5 -module-name Squint -import-objc-head
 
 cp Extension/Info.plist "$EXT/Contents/Info.plist"
 cp App/Info.plist "$APP/Contents/Info.plist"
-[ -f App/AppIcon.icns ] && cp App/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
+VERSION=$(cat VERSION)
+BUILD=$(git rev-list --count HEAD 2>/dev/null || echo 1)
+for plist in "$EXT/Contents/Info.plist" "$APP/Contents/Info.plist"; do
+  /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $VERSION" -c "Set :CFBundleVersion $BUILD" "$plist"
+done
+# Liquid Glass icon (Assets.car + AppIcon.icns) via actool; the prebuilt flat .icns without Xcode
+if xcrun --find actool >/dev/null 2>&1; then
+  xcrun actool App/AppIcon.icon --compile "$APP/Contents/Resources" --app-icon AppIcon --platform macosx \
+    --minimum-deployment-target 13.0 --output-partial-info-plist build/icon-partial.plist >/dev/null
+else
+  cp App/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
+fi
 cp -R Resources/. "$EXT/Contents/Resources/"
 
-codesign --force --sign - --entitlements Extension/Extension.entitlements "$EXT"
-codesign --force --sign - --entitlements App/App.entitlements "$APP"
-echo "Built $APP"
+sign() {
+  if [ -n "$SIGN_IDENTITY" ]; then codesign --force --sign "$SIGN_IDENTITY" --options runtime --timestamp --entitlements "$1" "$2"
+  else codesign --force --sign - --entitlements "$1" "$2"; fi
+}
+sign Extension/Extension.entitlements "$EXT"
+sign App/App.entitlements "$APP"
+echo "Built $APP $VERSION ($BUILD)"

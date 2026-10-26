@@ -39,6 +39,16 @@ sidebar, VS Code-style editing and the status bar:
 - **Settings** (⌘,) – themes, font, editor options, glass window, the Quick Look background, and which apps still open
   file types Squint could open. Stored in `~/.config/squint/config.json`.
 
+## Install
+
+Download `Squint-<version>.dmg` from [Releases](https://github.com/mortynex/squint/releases), open it and drag Squint
+to Applications. Squint isn't notarized yet, so the first launch is blocked: open System Settings › Privacy & Security
+and click **Open Anyway** (or run `xattr -dr com.apple.quarantine /Applications/Squint.app`). Launching it once
+registers the Quick Look extension.
+
+**Updates** – Squint checks GitHub once a day (Settings › Updates, or Squint › Check for Updates…). *Install and
+Relaunch* downloads the new version, checks its signature, swaps it in when Squint quits and starts it again.
+
 ## Default app
 
 The app's Info.plist claims every type the preview handles (and the code types other editors claim), so Squint opens
@@ -65,6 +75,22 @@ instead of Shiki's slower JS regex engine. `test/snap.sh` renders the preview of
 fresh pass after random edits, and match Quick Look's colours), editing commands, multiple cursors, find / replace,
 file formats, the unsaved-changes flow, the Explorer, Go to File and the menu shortcuts. `test/editor.sh --showcase
 <find|quickopen|multicursor|nosidebar|light|settings>` opens real windows for screenshots instead.
+
+## Releasing
+
+1. Bump `VERSION` (e.g. `1.1.0`) and commit.
+2. `./release.sh --publish` builds `build/release/Squint-<version>.dmg`, `.zip` and `.zip.sig`, tags `v<version>`,
+   pushes the tag and creates the GitHub release (notes from `RELEASE_NOTES`, else generated). Without `--publish`
+   it only builds the files.
+
+The zip is signed with an Ed25519 key kept in the login Keychain as "Squint Update Key" (`swift tools/update-key.swift
+generate` made it; its public half is `SquintUpdatePublicKey` in `App/Info.plist`). Back it up: without it, installed
+copies can't verify new releases. `SQUINT_UPDATE_KEY` (base64) can supply it instead, e.g. in CI. To test the updater
+against a local release, run the app binary with `SQUINT_UPDATE_FEED=file:///path/to/latest.json` (GitHub's release
+JSON shape, with `file:` asset URLs).
+
+With a Developer ID certificate, `SIGN_IDENTITY="Developer ID Application: …"` signs with the hardened runtime, and
+`NOTARY_PROFILE=<notarytool keychain profile>` also notarizes and staples the app and DMG (untested so far).
 
 ## Notes
 
